@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs | IoT Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;600;900&family=Playfair+Display:ital@0;1&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blogs-page">
+
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <header class="navbar scrolled">
+        <nav class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                <span class="logo-text">IOT <span class="highlight">CLUB</span></span>
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="events.html" class="nav-link">EVENTS</a></li>
+                <li><a href="projects.html" class="nav-link">PROJECTS</a></li>
+                <li><a href="team.html" class="nav-link">TEAM</a></li>
+                <li><a href="blogs.html" class="nav-link active">BLOGS</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top: 150px;">
+        <div class="section-header">
+            <span class="section-tag">INSIGHTS & UPDATES</span>
+            <h1 class="hero-title">EVENT <span class="gradient-text">BLOGS</span></h1>
+        </div>
+
+        <div class="updates-grid">
+            
+            <article class="update-card">
+                <div class="update-image">
+                    <img src="images/resume.jpeg" alt="Resume Building" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display:none;"><i class="fas fa-file-alt"></i></div>
+                    <div class="update-badge">Career</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-meta">
+                        <span class="update-date"><i class="far fa-calendar"></i> 21/09/2025</span>
+                    </div>
+                    <h3 class="update-title" style="font-family: 'Bebas Neue'; font-size: 2.5rem;">Resume Building Session</h3>
+                    <p class="update-description" style="font-family: 'Montserrat';">Industry-ready resumes for internships and placements with Mr. Dheeraj Rathod.</p>
+                </div>
+            </article>
+
+            <article class="update-card">
+                <div class="update-image">
+                    <img src="images/orientation.jpeg" alt="FY Orientation" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="update-badge">Orientation</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-meta">
+                        <span class="update-date"><i class="far fa-calendar"></i> 3 Months Ago</span>
+                    </div>
+                    <h3 class="update-title" style="font-family: 'Bebas Neue'; font-size: 2.5rem;">FY Orientation 2025</h3>
+                    <p class="update-description" style="font-family: 'Montserrat';">Introducing technical domains to spark innovation in the new batch.</p>
+                </div>
+            </article>
+
+            <article class="update-card">
+                <div class="update-image">
+                    <img src="images/xen.jpeg" alt="XEN 4.0" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="update-badge">Technical</div>
+                </div>
+                <div class="update-content">
+                    <div class="update-meta">
+                        <span class="update-date"><i class="far fa-calendar"></i> Oct 2025</span>
+                    </div>
+                    <h3 class="update-title" style="font-family: 'Bebas Neue'; font-size: 2.5rem;">XEN 4.0 National Event</h3>
+                    <p class="update-description" style="font-family: 'Montserrat';">Flagship event featuring Shark Tank IoT and workshops.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <section class="about" id="contribute" style="padding-top: 50px;">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">COMMUNITY</span>
+            <h2 class="section-title">ADD YOUR <span class="gradient-text">BLOG</span></h2>
+        </div>
+        
+        <div class="about-content" style="align-items: flex-start;">
+            <div class="about-text">
+                <p class="about-description" style="font-family: 'Playfair Display', serif; font-style: italic;">
+                    Have an insight from a recent project or a recap of an IOT Club event? 
+                    Submit your draft here.
+                </p>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-key"></i></div>
+                    <div class="feature-content">
+                        <h4>Security Required</h4>
+                        <p>Only verified lead members can publish directly to the live feed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visual-card" style="text-align: left; padding: 40px;">
+                <div class="card-content">
+                    <div class="input-group-sync">
+                        <label>BLOG TITLE</label>
+                        <input type="text" id="new-title" placeholder="IoT latest trends...">
+                    </div>
+                    <div class="input-group-sync" style="margin-top: 20px;">
+                        <label>CONTENT</label>
+                        <textarea id="new-content" rows="4" placeholder="Write your insights..."></textarea>
+                    </div>
+                    <div class="input-group-sync" style="margin-top: 20px;">
+                        <label>ADMIN KEY</label>
+                        <input type="password" id="admin-key" placeholder="••••">
+                    </div>
+                    <button class="btn btn-primary" onclick="postBlog()" style="width: 100%; margin-top: 30px; justify-content: center;">
+                        <span>POST BLOG</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 IOT Club VIT Pune. All rights reserved. Built with 💜 by IOT Club Team.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

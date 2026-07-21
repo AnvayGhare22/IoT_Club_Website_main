@@ -1,0 +1,168 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e0221;
+    background: var(--bg-main);
+    /* This creates the luxury "glowing" effect in the background */
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(168, 85, 247, 0.2) 0px, transparent 45%),
+        radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+    color: #f8fafc;
+    font-family:'Space Grotesk', 'Orbitron', 'Inter' , sans-serif;
+}
+
+/* Header Spacing */
+.header-container {
+    padding: 80px 10%;
+}
+
+
+.logo-area h1 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: 0.25em; /* This is the secret to the luxury look */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.logo-area p {
+    font-size: 0.75rem;
+    color: #888;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+/* Navigation Grid - 2x2 Layout */
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    gap: 16px;
+    margin-top: 50px;
+}
+
+.nav-links a {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(14px); /* Makes it look like frosted glass */
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    transition: all 0.4s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(168, 85, 247, 0.1);
+    border-color: var(--accent);
+    color: #fff;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.2);
+    transform: translateY(-4px);
+}
+.nav-links a::after {
+    content: ' ›'; /* Adds a small arrow after the text */
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    opacity: 1;
+    padding-left: 5px;
+}
+
+/* The Neon Title Effect */
+.neon-text {
+    font-family: 'Oxanium', sans-serif;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #9d6ab7, 0 0 21px #9d6ab7;
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* The Team Member Cards */
+.member-card {
+    background: rgba(45, 10, 58, 0.8); /* Semi-transparent dark purple */
+    border: 2px solid #3d0a4d;
+    padding: 28px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-12px);
+    border-color: #5c2180;
+}
+
+.name-tag {
+    background: #1a1a1a;
+    padding: 7px 20px;
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+/* Container for the content blocks */
+.info-block {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    min-height: 65vh;
+    padding: 0.8%;
+}
+
+/* This class flips the order of the children */
+.info-block.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Make sure the text doesn't hit the image */
+.text-side {
+    flex: 0 0 42%; /* Text takes up 40% width */
+}
+
+/* Make the gradient box stand out */
+.image-side {
+    flex: 0 0 45%; /* Image takes up 45% width */
+    height: 360px;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #a800ff, #115e6d, #731997);
+    box-shadow: 0 40px 50px rgba(139,92,246,0.3);
+}
+
+/* Typography refinements */
+.text-side h2 {
+    font-family: 'Oxaanium', sans-serif;
+    font-size: 4.6rem;
+    font-weight: 900;
+    letter-spacing: -1px; /* Tight luxury spacing */
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px  rgba(139, 92, 246, 0.45);
+}
+
+.text-side p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* The colorful gradient from your UI */
+.gradient-box {
+     background: linear-gradient(135deg, #6d28d9, #8b5cf6, #b339c6);
+    box-shadow: 0 0 30px rgba(139,92,246,0.6);
+    border-radius: 14px;
+}
