@@ -175,10 +175,41 @@ body {
     gap: 12px;
     cursor: pointer;
     transition: transform var(--transition-fast);
+    flex-shrink: 0;
 }
 
 .logo:hover {
     transform: translateY(-2px);
+}
+
+.logo-image {
+    height: 44px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    display: block;
+    transition: transform var(--transition-fast), filter var(--transition-fast);
+    filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.25));
+}
+
+.logo:hover .logo-image {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 18px rgba(139, 92, 246, 0.4));
+}
+
+.club-logo {
+    height: 50px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.25));
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo-icon {
@@ -204,9 +235,26 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .logo-image {
+        height: 36px;
+        max-width: 130px;
+    }
+
+    .club-logo {
+        height: 40px;
+        max-width: 150px;
+    }
+
+    .logo-text {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
 .logo-text {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--text-primary);
@@ -1725,4 +1773,36 @@ body {
 
 .arrow.rotate {
     transform: rotate(180deg);
+}
+
+/* ========================================
+   BLOGS PAGE
+   ======================================== */
+
+.blogs-loading,
+.blogs-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 40px 20px;
+}
+
+.blog-status {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog-status.success {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    color: #6ee7b7;
+}
+
+.blog-status.error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
 }
