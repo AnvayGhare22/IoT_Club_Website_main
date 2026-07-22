@@ -1,0 +1,29 @@
+[
+  {
+    "id": "resume-building-2025",
+    "title": "Resume Building Session",
+    "description": "Industry-ready resumes for internships and placements with Mr. Dheeraj Rathod.",
+    "date": "21/09/2025",
+    "badge": "Career",
+    "image": "images/blogs/resume.jpeg",
+    "icon": "fa-file-alt"
+  },
+  {
+    "id": "fy-orientation-2025",
+    "title": "FY Orientation 2025",
+    "description": "Introducing technical domains to spark innovation in the new batch.",
+    "date": "3 Months Ago",
+    "badge": "Orientation",
+    "image": "images/blogs/orientation.jpeg",
+    "icon": "fa-users"
+  },
+  {
+    "id": "xen-4-2025",
+    "title": "XEN 4.0 National Event",
+    "description": "Flagship event featuring Shark Tank IoT and workshops.",
+    "date": "Oct 2025",
+    "badge": "Technical",
+    "image": "images/blogs/xen.jpeg",
+    "icon": "fa-trophy"
+  }
+]
